@@ -18,5 +18,20 @@
     "libraryIdentifier" : "9267509e4b1bf8329d96d3b519ad5fc1",
     "format" : "model",
     "displayName" : "A_Welcoming_Sign.usdz"
+  },
+  {
+    "libraryIdentifier" : "07281f200c505aa456b1f16ce284184a",
+    "format" : "model",
+    "displayName" : "Shantae.usdz"
+  },
+  {
+    "libraryIdentifier" : "724668da046fd7e7ad4375b88032f0d9",
+    "format" : "model",
+    "displayName" : "caravan.usdz"
+  },
+  {
+    "libraryIdentifier" : "2cd37c9df981b4047c9dbee4f98587dd",
+    "format" : "model",
+    "displayName" : "Wagon.usdz"
   }
 ]
