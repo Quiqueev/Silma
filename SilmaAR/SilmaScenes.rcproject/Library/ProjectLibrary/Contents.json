@@ -1,47 +1,7 @@
 [
   {
-    "libraryIdentifier" : "17b0591af76d351689583b51740fff3f",
-    "format" : "model",
-    "displayName" : "Shrek_2_Roy_The_Save_Fairy.usdz"
-  },
-  {
-    "libraryIdentifier" : "8999b51b511c136fc46b80ab77194d68",
-    "format" : "model",
-    "displayName" : "花仙子_Flower_Fairy.usdz"
-  },
-  {
-    "libraryIdentifier" : "9fd1a5a24a1249dd2916b0148ce141e5",
-    "format" : "model",
-    "displayName" : "Stylized_log_and_plants.usdz"
-  },
-  {
-    "libraryIdentifier" : "9267509e4b1bf8329d96d3b519ad5fc1",
-    "format" : "model",
-    "displayName" : "A_Welcoming_Sign.usdz"
-  },
-  {
     "libraryIdentifier" : "1da821c74275fdc83b6bfe39b180e497",
     "format" : "image",
     "displayName" : "c2403641-de43-4613-bd1d-515916026e5d.jpeg"
-  },
-  {
-    "libraryIdentifier" : "09e93d4b70634b2608f276686b9fd689",
-    "format" : "model",
-    "displayName" : "Crystal.usdz"
-  },
-  {
-    "libraryIdentifier" : "3338345876fefc65aede6f4f2feeb050",
-    "format" : "model",
-    "displayName" : "Stylized_stones_minipack.usdz"
-  },
-  {
-    "libraryIdentifier" : "cf53af365de74bbdb5a4580e835ac574",
-    "format" : "model",
-    "displayName" : "Log_Cabin.usdz"
-  },
-  {
-    "libraryIdentifier" : "841ee81de345268a3636e780b2989d38",
-    "format" : "model",
-    "displayName" : "Mushroom_House.usdz"
   }
 ]
