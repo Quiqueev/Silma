@@ -10,11 +10,13 @@ import SwiftUI
 /// A `UIViewRepresentable `to use `SilmaARView` in SwiftUI
 struct SilmaARViewRepresentable: UIViewRepresentable {
     
+    @Binding var currentSceneName: String
+    
     func makeUIView(context: Context) -> SilmaARView {
         return SilmaARView()
     }
     
-    func updateUIView(_ uiView: SilmaARView, context: Context) {
-        
+    func updateUIView(_ silmaARView: SilmaARView, context: Context) {
+        silmaARView.showScene(sceneName: currentSceneName)
     }
 }
