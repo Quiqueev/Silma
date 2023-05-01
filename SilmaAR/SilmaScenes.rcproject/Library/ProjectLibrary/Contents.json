@@ -33,5 +33,10 @@
     "libraryIdentifier" : "2cd37c9df981b4047c9dbee4f98587dd",
     "format" : "model",
     "displayName" : "Wagon.usdz"
+  },
+  {
+    "libraryIdentifier" : "83cb25f914215dc4f5a94587b933e784",
+    "format" : "image",
+    "displayName" : "Lani.png"
   }
 ]
