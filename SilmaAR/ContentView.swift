@@ -9,8 +9,14 @@ import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        SilmaARViewRepresentable()
-            .ignoresSafeArea()
+        ZStack {
+            SilmaARViewRepresentable()
+                .ignoresSafeArea()
+            Button("test") { 
+                print("test")
+            }
+        }
+
     }
 }
 

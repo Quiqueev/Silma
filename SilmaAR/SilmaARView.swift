@@ -28,7 +28,11 @@ class SilmaARView: ARView {
 
     private func showScene() {
         guard let entity = try? Entity.load(named: "SilmaScenes") else { return }
+        #if targetEnvironment(simulator)
+        let anchor = AnchorEntity(world: [0,0,0])
+        #else
         let anchor = AnchorEntity(plane: .horizontal)
+        #endif
         anchor.addChild(entity)
         scene.addAnchor(anchor)
     }
