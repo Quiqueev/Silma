@@ -27,7 +27,7 @@ class SilmaARView: ARView {
     }
 
     private func showScene() {
-        guard let entity = try? Entity.load(named: "SilmaScenes") else { return }
+        guard let entity = Utility.loadRealityComposerScene(filename: "SilmaScenes", fileExtension: "reality", sceneName: "EmyScene") else { return }
         #if targetEnvironment(simulator)
         let anchor = AnchorEntity(world: [0,0,0])
         #else
@@ -35,5 +35,11 @@ class SilmaARView: ARView {
         #endif
         anchor.addChild(entity)
         scene.addAnchor(anchor)
+    }
+}
+
+struct Previews_SilmaARView_Previews: PreviewProvider {
+    static var previews: some View {
+        /*@START_MENU_TOKEN@*/Text("Hello, World!")/*@END_MENU_TOKEN@*/
     }
 }
