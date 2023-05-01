@@ -22,12 +22,13 @@ class SilmaARView: ARView {
     
     convenience init() {
         self.init(frame: UIScreen.main.bounds)
-        
-        showScene()
+        showScene(sceneName: "EmyScene")
     }
 
-    private func showScene() {
-        guard let entity = Utility.loadRealityComposerScene(filename: "SilmaScenes", fileExtension: "reality", sceneName: "EmyScene") else { return }
+
+    func showScene(sceneName: String) {
+        scene.anchors.removeAll()
+        guard let entity = Utility.loadRealityComposerScene(filename: "SilmaScenes", fileExtension: "reality", sceneName: sceneName) else { return }
         #if targetEnvironment(simulator)
         let anchor = AnchorEntity(world: [0,0,0])
         #else

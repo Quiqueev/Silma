@@ -9,11 +9,11 @@ import SwiftUI
 
 struct ContentView: View {
     @State private var showingConfirmation = false
-    @State private var currentScene = "emy"
+    @State private var currentSceneName = "EmyScene"
 
     var body: some View {
         ZStack(alignment: .bottomTrailing) {
-            SilmaARViewRepresentable()
+            SilmaARViewRepresentable(currentSceneName: $currentSceneName)
                 .ignoresSafeArea()
             Button {
                 showingConfirmation = true
@@ -30,10 +30,10 @@ struct ContentView: View {
             .padding(16)
         }
         .confirmationDialog("Change background", isPresented: $showingConfirmation) {
-            Button("Emy") { currentScene = "emy" }
-            Button("Solrac") { currentScene = "solrac" }
-            Button("Lani") { currentScene = "lani" }
-            Button("Cactus") { currentScene = "cactus" }
+            Button("Emy") { currentSceneName = "EmyScene" }
+            Button("Solrac") { currentSceneName = "SolracScene" }
+            Button("Lani") { currentSceneName = "LaniScene" }
+            Button("Cactus") { currentSceneName = "CactusScene" }
             Button("Cancelar", role: .cancel) { }
         } message: {
             Text("Selecciona una escenea")
