@@ -1562,6 +1562,87 @@
                                     {
                                       "configurationBox" : {
                                         "configuration" : {
+                                          "animationStyle" : "basic",
+                                          "duration" : 1.7699999809265137,
+                                          "emphasisAnimationType" : "jiggle",
+                                          "iterations" : 1,
+                                          "target" : [
+                                            "CAB852E3-532D-49B7-A0B6-81738DB696BD"
+                                          ]
+                                        },
+                                        "name" : {
+                                          "type" : "emphasis"
+                                        }
+                                      },
+                                      "identifier" : "1DDE36CA-6648-44AB-AAE3-CABB4EC5EE32",
+                                      "isEnabled" : true
+                                    }
+                                  ],
+                                  "__version" : 1
+                                }
+                              ],
+                              "identifier" : "9AB7AACB-FD06-4E65-ACE7-E11662C30CDF",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        }
+                      ],
+                      "color" : [
+                        0.30980393290519714,
+                        0.56470590829849243,
+                        0.99215686321258545,
+                        1
+                      ],
+                      "identifier" : "5945A23F-8342-4CA8-9F0B-BEC7CED95E35",
+                      "isEnabled" : true,
+                      "isLooping" : false,
+                      "isModal" : true,
+                      "name" : "tap",
+                      "triggers" : [
+                        {
+                          "__content" : [
+                            {
+                              "configurationBox" : {
+                                "configuration" : {
+                                  "target" : [
+                                    "CAB852E3-532D-49B7-A0B6-81738DB696BD"
+                                  ]
+                                },
+                                "name" : "tapTarget"
+                              },
+                              "identifier" : "99DCD00A-539D-4696-863A-48954DC22E21",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        }
+                      ]
+                    }
+                  ],
+                  "__version" : 3
+                },
+                {
+                  "__content" : [
+                    {
+                      "accessibility" : {
+                        "__content" : [
+                          {
+                            "isEnabled" : false
+                          }
+                        ],
+                        "__version" : 1
+                      },
+                      "actionGroups" : [
+                        {
+                          "__content" : [
+                            {
+                              "configurations" : [
+                                {
+                                  "__content" : [
+                                    {
+                                      "configurationBox" : {
+                                        "configuration" : {
                                           "angularCoefficient" : 1,
                                           "duration" : 1.5,
                                           "isTransformInitKeyPath" : true,
@@ -1705,6 +1786,127 @@
                                     {
                                       "configurationBox" : {
                                         "configuration" : {
+                                          "angularCoefficient" : 1,
+                                          "duration" : 2,
+                                          "isTransformInitKeyPath" : true,
+                                          "linearCoefficient" : 1,
+                                          "moveEase" : "easeInOut",
+                                          "respectPhysics" : false,
+                                          "scale" : 0.97000002861022949,
+                                          "target" : [
+                                            "CAB852E3-532D-49B7-A0B6-81738DB696BD"
+                                          ]
+                                        },
+                                        "name" : {
+                                          "arguments" : "local",
+                                          "type" : "transform"
+                                        }
+                                      },
+                                      "identifier" : "6D0BC46E-BB15-4C24-ACA0-82A9EAB9DC9D",
+                                      "isEnabled" : true
+                                    }
+                                  ],
+                                  "__version" : 1
+                                }
+                              ],
+                              "identifier" : "035E229C-4AC8-4121-8B5B-5BD257DD3E19",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        },
+                        {
+                          "__content" : [
+                            {
+                              "configurations" : [
+                                {
+                                  "__content" : [
+                                    {
+                                      "configurationBox" : {
+                                        "configuration" : {
+                                          "angularCoefficient" : 1,
+                                          "duration" : 2,
+                                          "isTransformInitKeyPath" : true,
+                                          "linearCoefficient" : 1,
+                                          "moveEase" : "easeInOut",
+                                          "respectPhysics" : false,
+                                          "scale" : 1.0299999713897705,
+                                          "target" : [
+                                            "CAB852E3-532D-49B7-A0B6-81738DB696BD"
+                                          ]
+                                        },
+                                        "name" : {
+                                          "arguments" : "local",
+                                          "type" : "transform"
+                                        }
+                                      },
+                                      "identifier" : "67AC8592-EFFA-40CD-8E11-F48F172A551A",
+                                      "isEnabled" : true
+                                    }
+                                  ],
+                                  "__version" : 1
+                                }
+                              ],
+                              "identifier" : "64483F8D-B900-4DEA-BC94-FCBA28203C0E",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        }
+                      ],
+                      "color" : [
+                        0.49019607901573181,
+                        0.7450980544090271,
+                        0.94901961088180542,
+                        1
+                      ],
+                      "identifier" : "B4B375FD-90A4-47AF-A658-DAC778AF633D",
+                      "isEnabled" : true,
+                      "isLooping" : true,
+                      "isModal" : false,
+                      "name" : "Idle Lani",
+                      "triggers" : [
+                        {
+                          "__content" : [
+                            {
+                              "configurationBox" : {
+                                "configuration" : {
+
+                                },
+                                "name" : "start"
+                              },
+                              "identifier" : "5BC7D33A-F83F-4D66-BD0D-3852E0D19C9C",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        }
+                      ]
+                    }
+                  ],
+                  "__version" : 3
+                },
+                {
+                  "__content" : [
+                    {
+                      "accessibility" : {
+                        "__content" : [
+                          {
+                            "isEnabled" : false
+                          }
+                        ],
+                        "__version" : 1
+                      },
+                      "actionGroups" : [
+                        {
+                          "__content" : [
+                            {
+                              "configurations" : [
+                                {
+                                  "__content" : [
+                                    {
+                                      "configurationBox" : {
+                                        "configuration" : {
                                           "animationDuration" : 0,
                                           "direction" : [
                                             0,
@@ -1749,7 +1951,7 @@
                       "identifier" : "6D8A97A0-9B99-4E81-8852-D2FEE5591D8F",
                       "isEnabled" : true,
                       "isLooping" : true,
-                      "isModal" : false,
+                      "isModal" : true,
                       "name" : "Look At Camera",
                       "triggers" : [
                         {
@@ -2102,21 +2304,21 @@
               "title" : "LaniScene",
               "viewTransform" : {
                 "cameraTransform" : [
-                  0.85219061374664307,
-                  6.6114523633586941e-08,
-                  -0.52323156595230103,
+                  0.99577534198760986,
+                  6.848505762491186e-08,
+                  -0.091823048889636993,
                   0,
-                  -0.18102957308292389,
-                  0.93824058771133423,
-                  -0.29484385251998901,
+                  -0.030543010681867599,
+                  0.9430580735206604,
+                  -0.33122280240058899,
                   0,
-                  0.49091699719429016,
-                  0.34598356485366821,
-                  0.7995598316192627,
+                  0.086594365537166595,
+                  0.33262819051742554,
+                  0.93907392024993896,
                   0,
-                  2.5191688537597656,
-                  2.3066449165344238,
-                  5.9155645370483398,
+                  1.1264749765396118,
+                  2.0663704872131348,
+                  3.6347370147705078,
                   1
                 ],
                 "sceneTransform" : [
@@ -2171,35 +2373,26 @@
                                     {
                                       "configurationBox" : {
                                         "configuration" : {
-                                          "animationDuration" : 0,
-                                          "direction" : [
-                                            0,
-                                            1,
-                                            0
-                                          ],
-                                          "duration" : 1,
-                                          "loops" : false,
+                                          "animationStyle" : "playful",
+                                          "duration" : 1.2000000476837158,
+                                          "emphasisAnimationType" : "spin",
+                                          "iterations" : 1,
                                           "target" : [
                                             "F5B01820-2D47-40F2-A6DB-BC9939D598EE"
-                                          ],
-                                          "upVector" : [
-                                            0,
-                                            1,
-                                            0
                                           ]
                                         },
                                         "name" : {
-                                          "type" : "lookAtCamera"
+                                          "type" : "emphasis"
                                         }
                                       },
-                                      "identifier" : "8BA087E1-C3E5-4E4C-8F77-768F44B695A0",
+                                      "identifier" : "1EE7FB17-EC8E-4DD4-8539-C0B800CF197B",
                                       "isEnabled" : true
                                     }
                                   ],
                                   "__version" : 1
                                 }
                               ],
-                              "identifier" : "4BD8E0EE-CEF0-444E-BEB2-6A29133B3095",
+                              "identifier" : "9D1ECCD0-9DE0-47AF-867E-88E9818973E3",
                               "isEnabled" : true
                             }
                           ],
@@ -2207,27 +2400,29 @@
                         }
                       ],
                       "color" : [
-                        0.364705890417099,
-                        0.74117648601531982,
-                        0.69019609689712524,
+                        0.30980393290519714,
+                        0.56470590829849243,
+                        0.99215686321258545,
                         1
                       ],
-                      "identifier" : "104F07C3-26A7-40BB-8931-C69D7E0951BE",
+                      "identifier" : "9DF4506C-A74A-4268-9381-9785D706466F",
                       "isEnabled" : true,
-                      "isLooping" : true,
-                      "isModal" : false,
-                      "name" : "Behavior",
+                      "isLooping" : false,
+                      "isModal" : true,
+                      "name" : "Tap animation",
                       "triggers" : [
                         {
                           "__content" : [
                             {
                               "configurationBox" : {
                                 "configuration" : {
-
+                                  "target" : [
+                                    "F5B01820-2D47-40F2-A6DB-BC9939D598EE"
+                                  ]
                                 },
-                                "name" : "start"
+                                "name" : "tapTarget"
                               },
-                              "identifier" : "724578F8-D299-4E8C-9DA4-CD3B2B7C1EE0",
+                              "identifier" : "4D775002-3E1C-4D5B-9E3B-2D499CE71498",
                               "isEnabled" : true
                             }
                           ],
@@ -2500,6 +2695,94 @@
                                 "name" : "start"
                               },
                               "identifier" : "9C3A1CD3-5A63-410F-98D8-EC0435D65CB6",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        }
+                      ]
+                    }
+                  ],
+                  "__version" : 3
+                },
+                {
+                  "__content" : [
+                    {
+                      "accessibility" : {
+                        "__content" : [
+                          {
+                            "isEnabled" : false
+                          }
+                        ],
+                        "__version" : 1
+                      },
+                      "actionGroups" : [
+                        {
+                          "__content" : [
+                            {
+                              "configurations" : [
+                                {
+                                  "__content" : [
+                                    {
+                                      "configurationBox" : {
+                                        "configuration" : {
+                                          "animationDuration" : 0,
+                                          "direction" : [
+                                            0,
+                                            1,
+                                            0
+                                          ],
+                                          "duration" : 1,
+                                          "loops" : false,
+                                          "target" : [
+                                            "F5B01820-2D47-40F2-A6DB-BC9939D598EE"
+                                          ],
+                                          "upVector" : [
+                                            0,
+                                            1,
+                                            0
+                                          ]
+                                        },
+                                        "name" : {
+                                          "type" : "lookAtCamera"
+                                        }
+                                      },
+                                      "identifier" : "8BA087E1-C3E5-4E4C-8F77-768F44B695A0",
+                                      "isEnabled" : true
+                                    }
+                                  ],
+                                  "__version" : 1
+                                }
+                              ],
+                              "identifier" : "4BD8E0EE-CEF0-444E-BEB2-6A29133B3095",
+                              "isEnabled" : true
+                            }
+                          ],
+                          "__version" : 1
+                        }
+                      ],
+                      "color" : [
+                        0.364705890417099,
+                        0.74117648601531982,
+                        0.69019609689712524,
+                        1
+                      ],
+                      "identifier" : "104F07C3-26A7-40BB-8931-C69D7E0951BE",
+                      "isEnabled" : true,
+                      "isLooping" : true,
+                      "isModal" : true,
+                      "name" : "Behavior",
+                      "triggers" : [
+                        {
+                          "__content" : [
+                            {
+                              "configurationBox" : {
+                                "configuration" : {
+
+                                },
+                                "name" : "start"
+                              },
+                              "identifier" : "724578F8-D299-4E8C-9DA4-CD3B2B7C1EE0",
                               "isEnabled" : true
                             }
                           ],
@@ -2847,21 +3130,21 @@
               "title" : "CactusScene",
               "viewTransform" : {
                 "cameraTransform" : [
-                  0.6965145468711853,
-                  7.9549614895313425e-08,
-                  -0.71754270792007446,
+                  0.9434095025062561,
+                  7.6484482747218863e-08,
+                  -0.33163020014762878,
                   0,
-                  -0.18380014598369598,
-                  0.96663647890090942,
-                  -0.17841339111328125,
+                  -0.088121317327022552,
+                  0.96404993534088135,
+                  -0.25068369507789612,
                   0,
-                  0.6936030387878418,
-                  0.25615215301513672,
-                  0.67327630519866943,
+                  0.31970813870429993,
+                  0.26572117209434509,
+                  0.90949380397796631,
                   0,
-                  6.2363944053649902,
-                  2.3545615673065186,
-                  2.0937528610229492,
+                  1.8665854930877686,
+                  1.9959313869476318,
+                  4.1519207954406738,
                   1
                 ],
                 "sceneTransform" : [
