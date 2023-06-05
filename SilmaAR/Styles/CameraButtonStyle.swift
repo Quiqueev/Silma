@@ -1,5 +1,5 @@
 //
-//  CircleButtonStyle.swift
+//  CameraButtonStyle.swift
 //  SilmaAR
 //
 //  Created by Ricardo Montemayor on 04/06/23.
@@ -7,10 +7,8 @@
 
 import SwiftUI
 
-struct CircleButtonStyle: ButtonStyle {
-
-    @State var color: Color = .indigo
-
+struct CameraButtonStyle: ButtonStyle {
+    
     func makeBody(configuration: Configuration) -> some View {
             configuration.label
                 .frame(width: 70, height: 70)
@@ -33,12 +31,12 @@ struct CircleButtonStyle: ButtonStyle {
     }
 }
 
-struct CircleButtonStyle_Previews: PreviewProvider {
+struct CameraButtonStyle_Previews: PreviewProvider {
     static var previews: some View {
         Button("") {
             
         }
-        .buttonStyle(CircleButtonStyle())
-        .background(Color.red)
+        .buttonStyle(CameraButtonStyle())
+        .background(Color.black)
     }
 }

@@ -19,28 +19,30 @@ struct ContentView: View {
             
             HStack {
                 Spacer()
-                Button("foto") {
-                    
+                    .frame(width: 60)
+                Spacer()
+                
+                Button("") {
                 }
+                .buttonStyle(CameraButtonStyle())
                 
                 Spacer()
-//                Button {
-//                    showingConfirmation = true
-//                } label: {
-//                    Image(systemName: "trapezoid.and.line.horizontal")
-//                        .resizable()
-//                        .aspectRatio(contentMode: .fit)
-//                        .frame(width: 24, height: 24)
-//                        .foregroundColor(.white)
-//                        .padding(16)
-//                        .background(.blue)
-//                        .clipShape(Circle())
-//                }
+                
+                Button {
+                    showingConfirmation = true
+                } label: {
+                    Image(systemName: "person.fill")
+                        .font(.system(size: 24))
+                        .foregroundColor(.white)
+                        .frame(width: 60, height: 60)
+                        .background(Color(white: 1.0, opacity: 0.2))
+                        .clipShape(Circle())
+                }
             }
             .padding(16)
 
         }
-        .padding(.top, 8)
+        .padding(.vertical, 8)
         .background(Color.black)
         .confirmationDialog("Change background", isPresented: $showingConfirmation) {
             Button("Emy") { currentSceneName = "EmyScene" }
