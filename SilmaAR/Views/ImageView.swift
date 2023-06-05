@@ -17,10 +17,16 @@ struct ImageView: View {
     var body: some View {
         NavigationView {
             VStack {
+                
+                ShareLink(
+                    item: image,
+                    message: Text("Conoce más en https://www.silmaed.com/"),
+                    preview: SharePreview("Foto con Grupo Silma", image: image)) 
                 image
                     .resizable()
                     .aspectRatio(contentMode: .fit)
                 Spacer()
+
             }
             .navigationBarTitleDisplayMode(.inline)
             .navigationTitle("Compartir foto")
@@ -31,7 +37,7 @@ struct ImageView: View {
                     }
                 }
                 ToolbarItem(placement: .navigationBarTrailing) {
-                    ShareLink(item: image, preview: SharePreview("Foto con Grupo Silma", image: image))
+
                 }
             }
 

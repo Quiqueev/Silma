@@ -14,7 +14,7 @@ struct ContentView: View {
     @State private var currentSceneName = "EmyScene"
 
     @State private var silmaARView: SilmaARView?
-    @State private var capturedImage: UIImage?
+    @State private var capturedImage: Image?
     
     var body: some View {
         VStack {
@@ -59,19 +59,35 @@ struct ContentView: View {
             Text("Selecciona una escenea")
         }
         .sheet(isPresented: $isSnapshotReady) {
-            ImageView(image: Image(uiImage: capturedImage ?? UIImage()))
+            if let validImage = capturedImage {
+                ImageView(image: validImage)
+            } else {
+                Text("Intenta de nuevo.")
+            }
         }
         
 
     }
     
     private func capturePhoto() {
+        
         guard let silmaARView = silmaARView else { return }
+        
+        // Haptic feedback
+        let impactFeedbackgenerator = UIImpactFeedbackGenerator(style: .heavy)
+        impactFeedbackgenerator.prepare()
+        impactFeedbackgenerator.impactOccurred()
+        
+        
         silmaARView.snapshot(saveToHDR: false) { image in
-            DispatchQueue.main.async {
-                capturedImage = image
-                isSnapshotReady = true
 
+            DispatchQueue.main.async {
+                if let image = image {
+                    capturedImage = Image(uiImage: image)
+                    isSnapshotReady = true
+                } else {
+                    print("Failed to capture image")
+                }
             }
         }
     }

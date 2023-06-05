@@ -32,7 +32,8 @@ class SilmaARView: ARView {
         #if targetEnvironment(simulator)
         let anchor = AnchorEntity(world: [0,0,0])
         #else
-        let anchor = AnchorEntity(plane: .horizontal)
+        let anchor = AnchorEntity()
+        anchor.position = simd_make_float3(0, 0, 0)
         #endif
         anchor.addChild(entity)
         scene.addAnchor(anchor)
