@@ -14,6 +14,7 @@
 		8C4BB27729D26981004D67AB /* SilmaARView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4BB27629D26981004D67AB /* SilmaARView.swift */; };
 		8C4BB27929D28E2F004D67AB /* SilmaARViewRepresentable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8C4BB27829D28E2F004D67AB /* SilmaARViewRepresentable.swift */; };
 		8C9EB88E29D5051800AC5D1E /* SilmaScenes.rcproject in Sources */ = {isa = PBXBuildFile; fileRef = 8C9EB88D29D5051800AC5D1E /* SilmaScenes.rcproject */; };
+		AA195E5D2A2D8B2300051D28 /* CircleButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA195E5C2A2D8B2300051D28 /* CircleButtonStyle.swift */; };
 		AA56B2CB2A004A2E00D0C21E /* Utility.swift in Sources */ = {isa = PBXBuildFile; fileRef = AA56B2CA2A004A2E00D0C21E /* Utility.swift */; };
 /* End PBXBuildFile section */
 
@@ -26,6 +27,7 @@
 		8C4BB27629D26981004D67AB /* SilmaARView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SilmaARView.swift; sourceTree = "<group>"; };
 		8C4BB27829D28E2F004D67AB /* SilmaARViewRepresentable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SilmaARViewRepresentable.swift; sourceTree = "<group>"; };
 		8C9EB88D29D5051800AC5D1E /* SilmaScenes.rcproject */ = {isa = PBXFileReference; lastKnownFileType = file.rcproject; path = SilmaScenes.rcproject; sourceTree = "<group>"; };
+		AA195E5C2A2D8B2300051D28 /* CircleButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleButtonStyle.swift; sourceTree = "<group>"; };
 		AA56B2CA2A004A2E00D0C21E /* Utility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -60,9 +62,8 @@
 			isa = PBXGroup;
 			children = (
 				8C4BB24C29D22BBA004D67AB /* SilmaARApp.swift */,
-				8C4BB27629D26981004D67AB /* SilmaARView.swift */,
-				8C4BB27829D28E2F004D67AB /* SilmaARViewRepresentable.swift */,
-				8C4BB24E29D22BBA004D67AB /* ContentView.swift */,
+				AA195E5A2A2D8AF300051D28 /* Styles */,
+				AA195E5B2A2D8AFF00051D28 /* Views */,
 				AA56B2CA2A004A2E00D0C21E /* Utility.swift */,
 				8C4BB25029D22BBA004D67AB /* Assets.xcassets */,
 				8C9EB88D29D5051800AC5D1E /* SilmaScenes.rcproject */,
@@ -77,6 +78,24 @@
 				8C4BB25329D22BBA004D67AB /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		AA195E5A2A2D8AF300051D28 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				AA195E5C2A2D8B2300051D28 /* CircleButtonStyle.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		AA195E5B2A2D8AFF00051D28 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8C4BB27829D28E2F004D67AB /* SilmaARViewRepresentable.swift */,
+				8C4BB27629D26981004D67AB /* SilmaARView.swift */,
+				8C4BB24E29D22BBA004D67AB /* ContentView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,6 +170,7 @@
 			files = (
 				8C4BB24F29D22BBA004D67AB /* ContentView.swift in Sources */,
 				8C9EB88E29D5051800AC5D1E /* SilmaScenes.rcproject in Sources */,
+				AA195E5D2A2D8B2300051D28 /* CircleButtonStyle.swift in Sources */,
 				AA56B2CB2A004A2E00D0C21E /* Utility.swift in Sources */,
 				8C4BB27929D28E2F004D67AB /* SilmaARViewRepresentable.swift in Sources */,
 				8C4BB24D29D22BBA004D67AB /* SilmaARApp.swift in Sources */,

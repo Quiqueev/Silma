@@ -7,28 +7,41 @@
 
 import SwiftUI
 
+
 struct ContentView: View {
     @State private var showingConfirmation = false
     @State private var currentSceneName = "EmyScene"
 
     var body: some View {
-        ZStack(alignment: .bottomTrailing) {
+        VStack {
             SilmaARViewRepresentable(currentSceneName: $currentSceneName)
                 .ignoresSafeArea()
-            Button {
-                showingConfirmation = true
-            } label: {
-                Image(systemName: "trapezoid.and.line.horizontal")
-                    .resizable()
-                    .aspectRatio(contentMode: .fit)
-                    .frame(width: 24, height: 24)
-                    .foregroundColor(.white)
-                    .padding(16)
-                    .background(.blue)
-                    .clipShape(Circle())
+            
+            HStack {
+                Spacer()
+                Button("foto") {
+                    
+                }
+                
+                Spacer()
+//                Button {
+//                    showingConfirmation = true
+//                } label: {
+//                    Image(systemName: "trapezoid.and.line.horizontal")
+//                        .resizable()
+//                        .aspectRatio(contentMode: .fit)
+//                        .frame(width: 24, height: 24)
+//                        .foregroundColor(.white)
+//                        .padding(16)
+//                        .background(.blue)
+//                        .clipShape(Circle())
+//                }
             }
             .padding(16)
+
         }
+        .padding(.top, 8)
+        .background(Color.black)
         .confirmationDialog("Change background", isPresented: $showingConfirmation) {
             Button("Emy") { currentSceneName = "EmyScene" }
             Button("Solrac") { currentSceneName = "SolracScene" }
@@ -38,6 +51,7 @@ struct ContentView: View {
         } message: {
             Text("Selecciona una escenea")
         }
+        
 
     }
 }
