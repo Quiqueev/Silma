@@ -45,16 +45,20 @@ struct ContentView: View {
                 
                 Spacer()
                 
-                Button {
+                Button("Personajes") {
                     showCharacterSelectionSheet = true
-                } label: {
-                    Image(systemName: "person.fill")
-                        .font(.system(size: 24))
-                        .foregroundColor(.white)
-                        .frame(width: 60, height: 60)
-                        .background(Color(white: 1.0, opacity: 0.2))
-                        .clipShape(Circle())
                 }
+                
+//                Button {
+//                    showCharacterSelectionSheet = true
+//                } label: {
+//                    Image(systemName: "person.fill")
+//                        .font(.system(size: 24))
+//                        .foregroundColor(.white)
+//                        .frame(width: 60, height: 60)
+//                        .background(Color(white: 1.0, opacity: 0.2))
+//                        .clipShape(Circle())
+//                }
             }
             .padding(16)
 
