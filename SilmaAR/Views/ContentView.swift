@@ -16,14 +16,25 @@ struct ContentView: View {
     @State private var silmaARView: SilmaARView?
     @State private var capturedImage: Image?
     
+    let websiteURL = URL(string: "https://www.silmaed.com/")!
+    
     var body: some View {
         VStack {
             SilmaARViewRepresentable(currentSceneName: $currentSceneName, silmaARView: $silmaARView)
 
             
             HStack {
-                Spacer()
-                    .frame(width: 60)
+                Button {
+                    UIApplication.shared.open(websiteURL)
+                } label: {
+                    Image("logo-silma")
+                        .resizable()
+                        .scaledToFit()
+                        .frame( height: 60)
+                        .background(Color(white: 1.0, opacity: 0.2))
+                        .cornerRadius(8)
+                }
+
                 Spacer()
                 
                 Button("") {
