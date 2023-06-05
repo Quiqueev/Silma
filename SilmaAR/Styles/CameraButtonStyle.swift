@@ -9,15 +9,17 @@ import SwiftUI
 
 struct CameraButtonStyle: ButtonStyle {
     
+    @Environment(\.isEnabled) private var isEnabled: Bool
+
     func makeBody(configuration: Configuration) -> some View {
             configuration.label
                 .frame(width: 70, height: 70)
-                .background(Color.white)
+                .background(isEnabled ? Color.white : Color(UIColor.systemGray2))
                 .clipShape(Circle())
                 .overlay {
 
                     Circle()
-                        .stroke(Color.white, lineWidth: 4)
+                        .stroke(isEnabled ? Color.white : Color(UIColor.systemGray2), lineWidth: 4)
                         .frame(width: 80, height: 80)
                     if configuration.isPressed {
                         Color(white: 0.0, opacity: 0.2)
@@ -38,5 +40,6 @@ struct CameraButtonStyle_Previews: PreviewProvider {
         }
         .buttonStyle(CameraButtonStyle())
         .background(Color.black)
+        .disabled(true)
     }
 }

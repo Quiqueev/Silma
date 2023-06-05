@@ -37,6 +37,8 @@ class SilmaARView: ARView {
         anchor.addChild(entity)
         scene.addAnchor(anchor)
     }
+    
+
 }
 
 struct Previews_SilmaARView_Previews: PreviewProvider {

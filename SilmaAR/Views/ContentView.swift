@@ -9,13 +9,17 @@ import SwiftUI
 
 
 struct ContentView: View {
-    @State private var showingConfirmation = false
+    @State private var isSnapshotReady = false
+    @State private var showCharacterSelectionSheet = false
     @State private var currentSceneName = "EmyScene"
 
+    @State private var silmaARView: SilmaARView?
+    @State private var capturedImage: UIImage?
+    
     var body: some View {
         VStack {
-            SilmaARViewRepresentable(currentSceneName: $currentSceneName)
-                .ignoresSafeArea()
+            SilmaARViewRepresentable(currentSceneName: $currentSceneName, silmaARView: $silmaARView)
+
             
             HStack {
                 Spacer()
@@ -23,13 +27,15 @@ struct ContentView: View {
                 Spacer()
                 
                 Button("") {
+                    capturePhoto()
                 }
                 .buttonStyle(CameraButtonStyle())
+                
                 
                 Spacer()
                 
                 Button {
-                    showingConfirmation = true
+                    showCharacterSelectionSheet = true
                 } label: {
                     Image(systemName: "person.fill")
                         .font(.system(size: 24))
@@ -42,9 +48,8 @@ struct ContentView: View {
             .padding(16)
 
         }
-        .padding(.vertical, 8)
         .background(Color.black)
-        .confirmationDialog("Change background", isPresented: $showingConfirmation) {
+        .confirmationDialog("Change background", isPresented: $showCharacterSelectionSheet) {
             Button("Emy") { currentSceneName = "EmyScene" }
             Button("Solrac") { currentSceneName = "SolracScene" }
             Button("Lani") { currentSceneName = "LaniScene" }
@@ -53,8 +58,22 @@ struct ContentView: View {
         } message: {
             Text("Selecciona una escenea")
         }
+        .sheet(isPresented: $isSnapshotReady) {
+            ImageView(image: Image(uiImage: capturedImage ?? UIImage()))
+        }
         
 
+    }
+    
+    private func capturePhoto() {
+        guard let silmaARView = silmaARView else { return }
+        silmaARView.snapshot(saveToHDR: false) { image in
+            DispatchQueue.main.async {
+                capturedImage = image
+                isSnapshotReady = true
+
+            }
+        }
     }
 }
 

@@ -11,9 +11,14 @@ import SwiftUI
 struct SilmaARViewRepresentable: UIViewRepresentable {
     
     @Binding var currentSceneName: String
+    @Binding var silmaARView: SilmaARView?
     
     func makeUIView(context: Context) -> SilmaARView {
-        return SilmaARView()
+        let arView = SilmaARView()
+        DispatchQueue.main.async {
+            self.silmaARView = arView
+        }
+        return arView
     }
     
     func updateUIView(_ silmaARView: SilmaARView, context: Context) {
